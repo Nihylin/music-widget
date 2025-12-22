@@ -1,1 +1,9 @@
 .DS_Store
+nutty/index.html
+nutty/script.js
+nutty/style.css
+old/index.html
+old/index_fichiers/script.js
+old/index_fichiers/socket.io.min.js
+old/index_fichiers/style.css
+old/index_fichiers/TweenMax.min.js

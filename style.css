@@ -4,7 +4,6 @@
 }
 
 #statusContainer {
-	font-family: 'Metropolis';
 	font-style: italic;
 	font-weight: bold;
 	font-size: 30px;
@@ -23,7 +22,7 @@
 }
 
 #mainContainer {
-	font-family: "Neue Haas Grotesk Display Pro", Helvetica, sans-serif;
+	font-family: Neue Haas Grotesk Display Pro, Helvetica, sans-serif;
 	display: flex;
 	position: absolute;
 	height: var(--album-art-size);

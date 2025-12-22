@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="#">
-	<link rel="stylesheet" href="style.css">
-	<script src="/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
-	<script src="/TweenMax.min.js"></script>
-	<script src="/script.js"></script>
-	<style>:is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}</style></head>
+	<link rel="shortcut icon" href="#" />
+	<link rel="stylesheet" href="./style.css" />
+	<script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+</head>
 
 <body>
 	<div id="statusContainer">Connecting...</div>
-	<div id="mainContainer" style="transform: translate(-50%, 50%) scale(2.23636);">
+	<div id="mainContainer">
 		<div id="albumArtBox">
-			<img id="albumArt">
-			<img id="albumArtBack">
+			<img id="albumArt"
+				src="https://static.wikia.nocookie.net/dreamcatcherwiki/images/d/dc/Dystopia_Lose_Myself_Digital_Cover.jpg"></img>
+			<img id="albumArtBack"
+				src="https://cdns-images.dzcdn.net/images/cover/762f7ef8a0c20e91304a3fae47449ccd/1900x1900-000000-80-0-0.jpg"></img>
 		</div>
 		<div id="songInfoBox">
 			<div id="songInfo">
 				<div id="IAmRunningOutOfNamesForTheseBoxes">
-					<div id="songLabel">/div>
-					<div id="artistLabel"></div>
+					<div id="songLabel">Can't get you out of my mind</div>
+					<div id="artistLabel">Dreamcatcher</div>
 					<div id="times">
-						<div id="progressTime"></div>
-						<div id="duration"></div>
+						<div id="progressTime">2:29</div>
+						<div id="duration">3:43</div>
 					</div>
 					<div id="progressBg">
 						<div id="progressBar"></div>
@@ -32,11 +31,14 @@
 				</div>
 			</div>
 			<div id="backgroundArt">
-				<img id="backgroundImage">
-				<img id="backgroundImageBack">
+				<img id="backgroundImage"
+					src="https://static.wikia.nocookie.net/dreamcatcherwiki/images/d/dc/Dystopia_Lose_Myself_Digital_Cover.jpg"></img>
+				<img id="backgroundImageBack"
+					src="https://cdns-images.dzcdn.net/images/cover/762f7ef8a0c20e91304a3fae47449ccd/1900x1900-000000-80-0-0.jpg"></img>
 			</div>
 		</div>
 	</div>
 </body>
 
-</html>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+<script src="./script.js"></script>
