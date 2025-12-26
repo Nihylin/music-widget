@@ -1,6 +1,16 @@
 * {
 	--corner-radius: 10px;
 	--album-art-size: 100px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+	font-family: Neue Haas Grotesk;
+	font-weight: 100 800;
+	src: url(./NHaasGroteskTXPro-Rg.ttf);
 }
 
 #statusContainer {
@@ -22,12 +32,12 @@
 }
 
 #mainContainer {
-	font-family: Neue Haas Grotesk Display Pro, Helvetica, sans-serif;
+	font-family: Neue Haas Grotesk;
 	display: flex;
 	position: absolute;
 	height: var(--album-art-size);
 	margin: 20px;
-	filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 1));
+	/* filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 1)); */
 	width: 100%;
 	max-width: 500px;
 	bottom: 45%;
@@ -43,6 +53,7 @@
 	margin: 0px 8px 0px 0px;
 	object-fit: cover;
 	width: var(--album-art-size);
+	/* border: solid 2px white; */
 }
 
 #albumArtBox img {
@@ -63,16 +74,21 @@
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
 	z-index: 4;
+	/* filter: drop-shadow(0px 0px 1px rgb(17, 20, 26)); */
 }
 
 #songInfo {
-	background: rgba(0, 0, 0, 0.5);
+	/* background: rgba(0, 0, 0, 0.5);
 	opacity: 0.9;
+	background: #11141A; */
 	position: relative;
 	border-radius: var(--corner-radius);
 	padding: 0px 20px;
 	height: 100%;
 	overflow: hidden;
+	border: solid 2px rgba(255, 255, 255, 0.75);
+	background: rgba(17, 20, 26, 0.75);
+	box-shadow: inset 0 0 4px rgba(229, 235, 238, 0.25);
 }
 
 #IAmRunningOutOfNamesForTheseBoxes {
@@ -91,11 +107,11 @@
 	border-radius: var(--corner-radius);
 	overflow: hidden;
 	z-index: -1;
-	opacity: 0.9;
+	opacity: 0.75;
 }
 
 #backgroundImage {
-	filter: blur(20px);
+	filter: blur(10px);
 	position: absolute;
 	width: 140%;
 	top: 50%;
@@ -104,7 +120,7 @@
 }
 
 #backgroundImageBack {
-	filter: blur(20px);
+	filter: blur(10px);
 	position: absolute;
 	width: 140%;
 	top: 50%;
